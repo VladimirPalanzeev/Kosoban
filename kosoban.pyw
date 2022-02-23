@@ -16,7 +16,7 @@ def nextLevelSet(btnNext: Button):
     # Удаляем кнопку продолжить
     btnNext.destroy()
     # Возвращаем в область видимости Button
-    btnCheat.place(x=10, y=590)
+    #btnCheat.place(x=10, y=590)
     btnReset.place(x=10, y=550)
     # Очищаем Canvas
     cnv.delete(ALL)
@@ -31,7 +31,7 @@ def nextLevel():
     stopTimer()
 
     # Убираем из зоны видимости кнопки, чтобы пользователь не мог их нажимать
-    btnCheat.place(x=-100, y=-100)
+   # btnCheat.place(x=-100, y=-100)
     btnReset.place(x=-100, y=-100)
 
     # Создаем кнопку "Продолжить". Удалять её, освобождая память будем каждый раз после нажатия в методе nextLevelSet
@@ -483,11 +483,9 @@ btnReset.place(x=10, y=550)
 btnReset["command"] = reset
 
 # Кнопка-чит
-btnCheat = Button(text="Установить ящики".upper(),
-                  font=("Consolas", "15"),
-                  width=20)
-btnCheat.place(x=10, y=590)
-btnCheat["command"] = goCheat
+#btnCheat = Button(text="Установить ящики".upper(), font=("Consolas", "15"),width=20)
+#btnCheat.place(x=10, y=590)
+#btnCheat["command"] = goCheat
 
 # Текстовая строка, показывающая время
 textTime = None
